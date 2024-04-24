@@ -1,0 +1,553 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="scss/styles.scss"/>
+  <!-- <meta name="google-signin-client_id" content="http://568274782457-47f8o4sk2hkff953dbbj3l8747ahdhmo.apps.googleusercontent.com"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="./dropdown.css"/>
+
+</head>
+<body>
+<div class="container mt-3 ">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    login
+  </button>
+</div>
+
+<!-- The Modal1 -->
+<section>
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-lg mt-5">
+    <div class="modal-content   p-5" >
+        <button type="button" class="btn-close  right "  data-bs-dismiss="modal"  ></button>
+ 
+        <!-- Modal Header -->
+      <!-- <div class="header">
+       <h4 class="modal-title ">
+            <path
+                d="m15.625 4.375-11.25 11.25M15.625 15.625 4.375 4.375"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+   
+          <svg
+            width="36"
+            height="36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="scale-150 md:mb-3  " >
+            <rect width="36" height="36" rx="18" fill="#fff"></rect>
+            <path
+              d="M22.967 15.335c0-1.255-1.095-2.273-2.447-2.273-1.351 0-2.447 1.018-2.447 2.273v6.31c0 1.255 1.096 2.273 2.447 2.273 1.352 0 2.447-1.018 2.447-2.274v-6.309Z"
+              fill="#FC690C"
+            ></path>
+            <path
+              d="M20.514 12.09a2.445 2.445 0 0 0 2.447-2.443 2.445 2.445 0 0 0-2.447-2.443 2.445 2.445 0 0 0-2.447 2.443 2.445 2.445 0 0 0 2.447 2.443ZM16.894 19.062c0-1.255-1.096-2.273-2.447-2.273S12 17.807 12 19.062v6.31c0 1.255 1.095 2.273 2.447 2.273 1.351 0 2.447-1.018 2.447-2.274v-6.309Z"
+              fill="#0029F5"
+            ></path>
+            <path
+              d="M14.447 15.817a2.445 2.445 0 0 0 2.447-2.443 2.445 2.445 0 0 0-2.447-2.442A2.445 2.445 0 0 0 12 13.374a2.445 2.445 0 0 0 2.447 2.443Z"
+              fill="#FC690C"
+            ></path>
+          </svg>
+    </h4>
+      </div> -->
+
+  <!-- Modal body -->
+      <div class="modal-body   justify-content-center">
+        <div class="row">
+  <div class="left-box col-md-6  justify-content-center">
+        <h3>Sign in to get started</h3>
+       <p class="subheading">Begin your journey to your dream job with mentors who are among the top 1% in the tech industry</p>
+       <p>Phone Number</p>
+       <input type="tel" class="Phone  text-black rounded-2 col-md-12 mt-1 p-2" width="100%" placeholder=""> 
+        <button type="button" class="btn btn-primary btn-xl text-white rounded-2 col-md-12 mt-2 p-3" data-bs-toggle="modal" data-bs-target="#myModal1">
+          Send OTP
+        </button>
+        <p class="text-center mt-2 mb-2 ">OR</p>
+        <button class="btn btn-light btn-lg border-black-1px text-dark w-100 fs-6 rounded-2 col-md-12  border-black-1px"  ><img src="images/google1.png" style="width: 10%" class="me-2">Sign in with Google</button>
+        <button class="btn btn-light btn-lg border-black-1px text-dark w-100 fs-6 rounded-2 col-md-12  border-black-1px mt-3"  ><img src="images/apple.png" style="width: 10%" class="me-2">Continue with Apple</button>
+</div>
+<div class="right col-md-6 justify-content-center">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+  
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./images/harshit1.PNG" alt="Los Angeles">
+      </div>
+  
+      <!-- <div class="item">
+        <img src="chicago.jpg" alt="Chicago">
+      </div>
+  
+      <div class="item">
+        <img src="ny.jpg" alt="New York">
+      </div> -->
+    </div>
+  
+    <!-- Left and right controls -->
+    <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+
+  <!-- <div id="myCarousel" class="carousel slide"> -->
+ <!-- Carousel indicators -->
+ <!-- <ol class="carousel-indicators">
+ <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+ <li data-target="#myCarousel" data-slide-to="1"></li>
+ <li data-target="#myCarousel" data-slide-to="2"></li>
+ </ol>  -->
+ <!-- Carousel items -->
+ <!-- <div class="carousel-inner">
+ <div class="item active">
+ <img src="/images/harshit1.PNG" alt="First slide">
+ </div>
+ <div class="item">
+ <img src="/images/shafi2.PNG" alt="Second slide">
+ </div>
+ <div class="item">
+ <img src="/images/vikas3.PNG" alt="Third slide">
+ </div>
+ </div> -->
+ <!-- Carousel nav -->
+ <!-- <a class="carousel-control left" href="#myCarousel"
+ data-slide="prev">&lsaquo;</a>
+ <a class="carousel-control right" href="#myCarousel"
+ data-slide="next">&rsaquo;</a>
+</div> -->
+
+  
+<!-- <section>
+  <div class="center">
+      <img src="./images/harshit1.PNG" alt="img1"/>
+      <img src="./images/shafi2.PNG" alt="img2"/>
+      <img src="./images/vikas3.PNG" alt="img3"/>
+      <img src="./images/harshit4.PNG" alt="img4"/>
+      <img src="./images/prashant5.PNG" alt="img4"/>
+
+  </div>
+</section> -->
+
+  
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./images/harshit1.PNG" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./images/shafi2.PNG" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./images/vikas3.PNG" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="./images/harshit1.PNG" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div> -->
+
+
+  <!-- <div class="container">
+      
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+      <!-- Indicators -->
+      <!-- <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol> -->
+  
+      <!-- Wrapper for slides -->
+      <!-- <div class="carousel-inner">
+        <div class="item active">
+          <img src="./images/harshit1.PNG" alt="Los Angeles" style="width:100%;">
+        </div>
+  
+        <div class="item">
+          <img src="./images/shafi2.PNG" alt="Chicago" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="./images/vikas3.PNG" alt="New york" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./images/harshit4.PNG" alt="New york" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./images/prashant5.PNG" alt="New york" style="width:100%;">
+        </div>
+
+      </div> -->
+  
+      <!-- Left and right controls-->
+      <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+    </div>
+  </div> 
+</div>
+<!-- <script>
+  google.accounts.id.renderButton(
+    document.getElementById("buttonDiv"),
+    { locale: "fr" }
+  );
+</script> -->
+        <!-- <button class="btn btn-light btn-lg border-black-1px text-dark w-100 fs-6 rounded-2 col-md-12  border-black-1px mt-2"  ><img src="images/apple.png" style="width: 5%" class="me-2">Continue with Apple</button> -->
+</div>
+     </div>
+    </div>
+
+  <!-- Modal footer -->
+      <div class="footer">
+      </div>
+ </div>
+  </div>
+</div>
+</section>
+
+<!--#myModal2-->
+<section>
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog modal-lg mt-5">
+       <div class="modal-content   p-5" >
+          <button type="button" class="btn-close "  data-bs-dismiss="modal" ></button>
+          
+          <!-- Modal Header -->
+        <!-- <div class="header">
+          <h4 class="modal-title ">
+              <path
+                  d="m15.625 4.375-11.25 11.25M15.625 15.625 4.375 4.375"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+            <svg
+              width="36"
+              height="36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="scale-150 md:mb-3  ">
+              <rect width="36" height="36" rx="18" fill="#fff"></rect>
+              <path
+                d="M22.967 15.335c0-1.255-1.095-2.273-2.447-2.273-1.351 0-2.447 1.018-2.447 2.273v6.31c0 1.255 1.096 2.273 2.447 2.273 1.352 0 2.447-1.018 2.447-2.274v-6.309Z"
+                fill="#FC690C"
+              ></path>
+              <path
+                d="M20.514 12.09a2.445 2.445 0 0 0 2.447-2.443 2.445 2.445 0 0 0-2.447-2.443 2.445 2.445 0 0 0-2.447 2.443 2.445 2.445 0 0 0 2.447 2.443ZM16.894 19.062c0-1.255-1.096-2.273-2.447-2.273S12 17.807 12 19.062v6.31c0 1.255 1.095 2.273 2.447 2.273 1.351 0 2.447-1.018 2.447-2.274v-6.309Z"
+                fill="#0029F5"
+              ></path>
+              <path
+                d="M14.447 15.817a2.445 2.445 0 0 0 2.447-2.443 2.445 2.445 0 0 0-2.447-2.442A2.445 2.445 0 0 0 12 13.374a2.445 2.445 0 0 0 2.447 2.443Z"
+                fill="#FC690C"
+              ></path>
+            </svg>
+      </h4>   
+        </div> -->
+
+        <!-- Modal body -->
+        <div class="modal-body   justify-content-center">
+          <div class="row">
+   <div class="left-box col-md-6  justify-content-center">
+          <h3>Welcome to Preplaced</h3>
+         <p>Full Name</p>
+         <input type="text" class="Name  text-black rounded-2 col-md-12 mt-1 p-2" width="100%" placeholder="">
+         <p>Phone Number</p>
+         <input type="tel" class="Phone  text-black rounded-2 col-md-12 mt-1 p-2" width="100%" placeholder=""> 
+          <button type="button" class="btn btn-primary btn-xl text-white rounded-2 col-md-12 mt-2 p-3" data-bs-toggle="modal" data-bs-target="#myModal2">
+           Verify Number
+          </button>
+  </div>
+  <div class="right-box col-md-6 justify-content-center">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./images/harshit1.PNG" alt="Los Angeles">
+        </div>
+        </div>
+  </div>
+  </div>
+  
+      </div>
+      
+
+        <!-- Modal footer -->
+        <div class="footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+<!--#myModal3-->
+  <section>
+    <div class="modal" id="myModal2">
+      <div class="modal-dialog modal-lg mt-5">
+        <div class="modal-content   p-5" >
+            <button type="button" class="btn-close "  data-bs-dismiss="modal" ></button>
+           
+            <!-- Modal Header -->
+          <!-- <div class="header">
+            <h4 class="modal-title ">
+                <path d="m15.625 4.375-11.25 11.25M15.625 15.625 4.375 4.375"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+              <svg
+                width="36"
+                height="36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="scale-150 md:mb-3  " >
+                <rect width="36" height="36" rx="18" fill="#fff"></rect>
+                <path
+                  d="M22.967 15.335c0-1.255-1.095-2.273-2.447-2.273-1.351 0-2.447 1.018-2.447 2.273v6.31c0 1.255 1.096 2.273 2.447 2.273 1.352 0 2.447-1.018 2.447-2.274v-6.309Z"
+                  fill="#FC690C"
+                ></path>
+                <path
+                  d="M20.514 12.09a2.445 2.445 0 0 0 2.447-2.443 2.445 2.445 0 0 0-2.447-2.443 2.445 2.445 0 0 0-2.447 2.443 2.445 2.445 0 0 0 2.447 2.443ZM16.894 19.062c0-1.255-1.096-2.273-2.447-2.273S12 17.807 12 19.062v6.31c0 1.255 1.095 2.273 2.447 2.273 1.351 0 2.447-1.018 2.447-2.274v-6.309Z"
+                  fill="#0029F5"
+                ></path>
+                <path
+                  d="M14.447 15.817a2.445 2.445 0 0 0 2.447-2.443 2.445 2.445 0 0 0-2.447-2.442A2.445 2.445 0 0 0 12 13.374a2.445 2.445 0 0 0 2.447 2.443Z"
+                  fill="#FC690C"
+                ></path>
+              </svg>
+        </h4>
+         </div> -->
+          
+         <!-- Modal body -->
+          <div class="modal-body   justify-content-center">
+            <div class="row">
+            <div class="left-box col-md-6  justify-content-center">
+            <h3>Verify phone number</h3>
+           <p class="subheading">We have sent a verification OTP to +91</p>
+           <div class="otp_input text-start mb-2 ">
+            <div class="d-flex align-items-center  justify-content-between mt-2 me-2  " width="100%">
+              <input type="single-digit" class="form-control " placeholder="">
+              <input type="text" class="form-control " placeholder="" width="8%" me>
+              <input type="text" class="form-control" placeholder="">
+              <input type="text" class="form-control" placeholder="">
+              <input type="text" class="form-control" placeholder="">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+
+           </div>
+           <p>Have a Referral Code? (OPTIONAL)</p>
+            <input type="tel" class="Phone  text-black rounded-2 col-md-12 mt-1 p-2" width="100%" placeholder=""> 
+           <button type="button" class="btn btn-primary btn-xl text-white rounded-2 col-md-12 mt-2 p-3" data-bs-toggle="modal" data-bs-target="#myModal3">
+            Verify OTP
+           </button>
+
+           <button type="button" class="btn btn-light btn-xl text-black rounded-2 col-md-12 mt-2 p-3" data-bs-toggle="modal" data-bs-target="#myModal2">
+            Resend OTP
+           </button>
+    </div>
+    <div class="right-box col-md-6 justify-content-center">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="./images/harshit1.PNG" alt="Los Angeles">
+          </div>
+          </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+          <!-- Modal footer -->
+          <div class="footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+<!--#myModal4-->
+    <section>
+      <div class="modal" id="myModal3">
+        <div class="modal-dialog modal-lg mt-5">
+          <div class="modal-content   p-5" >
+              <button type="button" class="btn-close "  data-bs-dismiss="modal" ></button>
+        <!-- Modal Header -->
+            <!-- <div class="header">
+             <h4 class="modal-title ">
+                  <path
+                      d="m15.625 4.375-11.25 11.25M15.625 15.625 4.375 4.375"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+                <svg
+                  width="36"
+                  height="36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="scale-150 md:mb-3  ">
+                  <rect width="36" height="36" rx="18" fill="#fff"></rect>
+                  <path
+                    d="M22.967 15.335c0-1.255-1.095-2.273-2.447-2.273-1.351 0-2.447 1.018-2.447 2.273v6.31c0 1.255 1.096 2.273 2.447 2.273 1.352 0 2.447-1.018 2.447-2.274v-6.309Z"
+                    fill="#FC690C"
+                  ></path>
+                  <path
+                    d="M20.514 12.09a2.445 2.445 0 0 0 2.447-2.443 2.445 2.445 0 0 0-2.447-2.443 2.445 2.445 0 0 0-2.447 2.443 2.445 2.445 0 0 0 2.447 2.443ZM16.894 19.062c0-1.255-1.096-2.273-2.447-2.273S12 17.807 12 19.062v6.31c0 1.255 1.095 2.273 2.447 2.273 1.351 0 2.447-1.018 2.447-2.274v-6.309Z"
+                    fill="#0029F5"
+                  ></path>
+                  <path
+                    d="M14.447 15.817a2.445 2.445 0 0 0 2.447-2.443 2.445 2.445 0 0 0-2.447-2.442A2.445 2.445 0 0 0 12 13.374a2.445 2.445 0 0 0 2.447 2.443Z"
+                    fill="#FC690C"
+                  ></path>
+                </svg>
+          </h4>
+           </div> -->
+        <!-- Modal body -->
+            <div class="modal-body   justify-content-center">
+              <div class="row">
+        <div class="left-box col-md-6  justify-content-center">
+              <h3>Your first session is on us-choose any mentor for <span class="dif  " >FREE</span></h3>
+             <p class="subheading"> Begin your journey to your dream job with mentors who are among the top 1% in the tech industry</p>
+              <p class="line  bold"> I'am currently</p>
+              
+     
+              <div class="custom-select 1px solid black "   style="width:100%">
+                          <select>
+                            <option value="0">e.g Fresher or Working</option>
+                            <option value="1">Fresher</option>
+                            <option value="2">Working Professional</option>
+                          </select>
+                        </div>
+                        <p class="line  bold"> My Goal</p>
+                        <div class="custom-select 1px solid black "   style="width:100%">
+                          <select>
+                            <option value="0">e.g Switch my domain</option>
+                            <option value="1">In college, preparing for on/off campus placements</option>
+                            <option value="2">In college,looking for projects under a mentor</option>
+                            <option value="3">Graduated,looking for their first job</option>
+
+                          </select>
+                        </div>
+                        <p>Target companies</p>
+                        <div class="companies btn-light border-light-1px me-2">
+                          <button  class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px" >Maang</button>
+                          <button class="btn btn-light border-black-1px text-dark  mt-2 rounded-2   border-black-1px">Startups</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Product Based</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Consultation Firms</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Service Based</button>
+
+                          <p class="target mt-5">Target Domains</p>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Frontend Developer</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Backend Developer</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Fullstack Developer</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">DevOps/SRE/Cloud Engineer</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">QA/Automation Testing Engineer</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Data Engineer/Big Data</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Cybersecurity Engineer</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Engineering Manager</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Data Scientist/AI/ML</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Data Analyst</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Sales</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Marketing</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Business Analyst/Consultant</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Finance</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">HR/Behavioural and Communication</button>
+                          <button class="btn btn-light  border-black-1px text-dark mt-2  rounded-2   border-black-1px">Product Manager</button>
+
+                        </div>
+              
+    </div>
+    <div class="right-box col-md-6 justify-content-center">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="./images/harshit1.PNG" alt="Los Angeles">
+          </div>
+          </div>
+    </div>
+    </div>
+    </div>
+      </div>
+
+         <!-- Modal footer -->
+            <div class="footer">
+            </div>
+       </div>
+        </div>
+      </div>
+      </section>
+
+      <script src="https://accounts.google.com/gsi/client?hl=fr" async></script>
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="./js/script.js"></script>
+     <script src="/dropdown.js"></script>
+
+</body>
+</html>
